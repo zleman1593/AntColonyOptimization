@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A29406A01AD2260E00F46237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294069F1AD2260E00F46237 /* AppDelegate.swift */; };
+		A29406A21AD2260E00F46237 /* AntColonyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29406A11AD2260E00F46237 /* AntColonyViewController.swift */; };
+		A29406A51AD2260E00F46237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29406A31AD2260E00F46237 /* Main.storyboard */; };
+		A29406A71AD2260E00F46237 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29406A61AD2260E00F46237 /* Images.xcassets */; };
+		A29406AA1AD2260E00F46237 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A29406A81AD2260E00F46237 /* LaunchScreen.xib */; };
+		A29406B61AD2260E00F46237 /* AntColonyOptimizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29406B51AD2260E00F46237 /* AntColonyOptimizationTests.swift */; };
+		A29406C01AD2262D00F46237 /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29406BF1AD2262D00F46237 /* Ant.swift */; };
+		A29406C21AD2264800F46237 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29406C11AD2264800F46237 /* Edge.swift */; };
+		A29406C41AD226EA00F46237 /* ACO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29406C31AD226EA00F46237 /* ACO.swift */; };
+		A29406C61AD2276B00F46237 /* InputFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29406C51AD2276B00F46237 /* InputFileReader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A29406B01AD2260E00F46237 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A29406921AD2260D00F46237 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A29406991AD2260E00F46237;
+			remoteInfo = AntColonyOptimization;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A294069A1AD2260E00F46237 /* AntColonyOptimization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AntColonyOptimization.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A294069E1AD2260E00F46237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A294069F1AD2260E00F46237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A29406A11AD2260E00F46237 /* AntColonyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntColonyViewController.swift; sourceTree = "<group>"; };
+		A29406A41AD2260E00F46237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A29406A61AD2260E00F46237 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A29406A91AD2260E00F46237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A29406AF1AD2260E00F46237 /* AntColonyOptimizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AntColonyOptimizationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29406B41AD2260E00F46237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A29406B51AD2260E00F46237 /* AntColonyOptimizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntColonyOptimizationTests.swift; sourceTree = "<group>"; };
+		A29406BF1AD2262D00F46237 /* Ant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ant.swift; sourceTree = "<group>"; };
+		A29406C11AD2264800F46237 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		A29406C31AD226EA00F46237 /* ACO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACO.swift; sourceTree = "<group>"; };
+		A29406C51AD2276B00F46237 /* InputFileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFileReader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A29406971AD2260E00F46237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A29406AC1AD2260E00F46237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A29406911AD2260D00F46237 = {
+			isa = PBXGroup;
+			children = (
+				A294069C1AD2260E00F46237 /* AntColonyOptimization */,
+				A29406B21AD2260E00F46237 /* AntColonyOptimizationTests */,
+				A294069B1AD2260E00F46237 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A294069B1AD2260E00F46237 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A294069A1AD2260E00F46237 /* AntColonyOptimization.app */,
+				A29406AF1AD2260E00F46237 /* AntColonyOptimizationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A294069C1AD2260E00F46237 /* AntColonyOptimization */ = {
+			isa = PBXGroup;
+			children = (
+				A29406A11AD2260E00F46237 /* AntColonyViewController.swift */,
+				A29406C31AD226EA00F46237 /* ACO.swift */,
+				A29406C51AD2276B00F46237 /* InputFileReader.swift */,
+				A29406BF1AD2262D00F46237 /* Ant.swift */,
+				A29406C11AD2264800F46237 /* Edge.swift */,
+				A29406A31AD2260E00F46237 /* Main.storyboard */,
+				A29406A81AD2260E00F46237 /* LaunchScreen.xib */,
+				A294069D1AD2260E00F46237 /* Supporting Files */,
+			);
+			path = AntColonyOptimization;
+			sourceTree = "<group>";
+		};
+		A294069D1AD2260E00F46237 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A29406A61AD2260E00F46237 /* Images.xcassets */,
+				A294069F1AD2260E00F46237 /* AppDelegate.swift */,
+				A294069E1AD2260E00F46237 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A29406B21AD2260E00F46237 /* AntColonyOptimizationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A29406B51AD2260E00F46237 /* AntColonyOptimizationTests.swift */,
+				A29406B31AD2260E00F46237 /* Supporting Files */,
+			);
+			path = AntColonyOptimizationTests;
+			sourceTree = "<group>";
+		};
+		A29406B31AD2260E00F46237 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A29406B41AD2260E00F46237 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A29406991AD2260E00F46237 /* AntColonyOptimization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A29406B91AD2260E00F46237 /* Build configuration list for PBXNativeTarget "AntColonyOptimization" */;
+			buildPhases = (
+				A29406961AD2260E00F46237 /* Sources */,
+				A29406971AD2260E00F46237 /* Frameworks */,
+				A29406981AD2260E00F46237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AntColonyOptimization;
+			productName = AntColonyOptimization;
+			productReference = A294069A1AD2260E00F46237 /* AntColonyOptimization.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A29406AE1AD2260E00F46237 /* AntColonyOptimizationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A29406BC1AD2260E00F46237 /* Build configuration list for PBXNativeTarget "AntColonyOptimizationTests" */;
+			buildPhases = (
+				A29406AB1AD2260E00F46237 /* Sources */,
+				A29406AC1AD2260E00F46237 /* Frameworks */,
+				A29406AD1AD2260E00F46237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A29406B11AD2260E00F46237 /* PBXTargetDependency */,
+			);
+			name = AntColonyOptimizationTests;
+			productName = AntColonyOptimizationTests;
+			productReference = A29406AF1AD2260E00F46237 /* AntColonyOptimizationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A29406921AD2260D00F46237 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Zleman;
+				TargetAttributes = {
+					A29406991AD2260E00F46237 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					A29406AE1AD2260E00F46237 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = A29406991AD2260E00F46237;
+					};
+				};
+			};
+			buildConfigurationList = A29406951AD2260D00F46237 /* Build configuration list for PBXProject "AntColonyOptimization" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A29406911AD2260D00F46237;
+			productRefGroup = A294069B1AD2260E00F46237 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A29406991AD2260E00F46237 /* AntColonyOptimization */,
+				A29406AE1AD2260E00F46237 /* AntColonyOptimizationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A29406981AD2260E00F46237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A29406A51AD2260E00F46237 /* Main.storyboard in Resources */,
+				A29406AA1AD2260E00F46237 /* LaunchScreen.xib in Resources */,
+				A29406A71AD2260E00F46237 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A29406AD1AD2260E00F46237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A29406961AD2260E00F46237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A29406C01AD2262D00F46237 /* Ant.swift in Sources */,
+				A29406C61AD2276B00F46237 /* InputFileReader.swift in Sources */,
+				A29406A21AD2260E00F46237 /* AntColonyViewController.swift in Sources */,
+				A29406C21AD2264800F46237 /* Edge.swift in Sources */,
+				A29406A01AD2260E00F46237 /* AppDelegate.swift in Sources */,
+				A29406C41AD226EA00F46237 /* ACO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A29406AB1AD2260E00F46237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A29406B61AD2260E00F46237 /* AntColonyOptimizationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A29406B11AD2260E00F46237 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A29406991AD2260E00F46237 /* AntColonyOptimization */;
+			targetProxy = A29406B01AD2260E00F46237 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A29406A31AD2260E00F46237 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A29406A41AD2260E00F46237 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A29406A81AD2260E00F46237 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A29406A91AD2260E00F46237 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A29406B71AD2260E00F46237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A29406B81AD2260E00F46237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A29406BA1AD2260E00F46237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AntColonyOptimization/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A29406BB1AD2260E00F46237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AntColonyOptimization/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A29406BD1AD2260E00F46237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AntColonyOptimizationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AntColonyOptimization.app/AntColonyOptimization";
+			};
+			name = Debug;
+		};
+		A29406BE1AD2260E00F46237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AntColonyOptimizationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AntColonyOptimization.app/AntColonyOptimization";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A29406951AD2260D00F46237 /* Build configuration list for PBXProject "AntColonyOptimization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29406B71AD2260E00F46237 /* Debug */,
+				A29406B81AD2260E00F46237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A29406B91AD2260E00F46237 /* Build configuration list for PBXNativeTarget "AntColonyOptimization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29406BA1AD2260E00F46237 /* Debug */,
+				A29406BB1AD2260E00F46237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A29406BC1AD2260E00F46237 /* Build configuration list for PBXNativeTarget "AntColonyOptimizationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29406BD1AD2260E00F46237 /* Debug */,
+				A29406BE1AD2260E00F46237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A29406921AD2260D00F46237 /* Project object */;
+}

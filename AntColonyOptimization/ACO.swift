@@ -13,6 +13,13 @@ class ACO  {
     var edges: [Edge]!
     var algorithm: String!
     
+    init(fileContents:[Edge], algorithm:String){
+        self.edges = fileContents
+        self.algorithm = algorithm
+    }
     
+    func runWithSettings(){
+    
+    }
     
 }

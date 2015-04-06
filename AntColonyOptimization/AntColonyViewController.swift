@@ -9,10 +9,26 @@
 import UIKit
 
 class AntColonyViewController: UIViewController {
-
+    
+    private let filereader = InputFileReader()
+    private let fileLocation = "a280"
+    private var solver: ACO!
+    
+    
+    
+    private struct Constants {
+        static let tau_o = 1
+        static let algorithm = "ACS"
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let fileContents = filereader.readFrom(fileLocation)
+        
+        //solver = ACO(fileContents: fileContents, algorithm: Constants.algorithm)
+        //solver.runWithSettings()
     }
 
 

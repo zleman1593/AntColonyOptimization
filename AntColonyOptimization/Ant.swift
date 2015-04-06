@@ -9,6 +9,15 @@
 import Foundation
 
 
+
+
 class Ant{
+    
+    var currentCity:Int!
+    var remainingCities: [Int]!
+    
+    init(){
+    
+    }
     
 }

@@ -19,15 +19,14 @@ class AntColonyViewController: UIViewController {
     private struct Constants {
         static let tau_o = 1
         static let algorithm = "ACS"
-        
+        static let numberOfAnts = 10
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let fileContents = filereader.readFrom(fileLocation)
-        
-        //solver = ACO(fileContents: fileContents, algorithm: Constants.algorithm)
+        solver = ACO(fileContents: fileContents, algorithm: Constants.algorithm,numberOfAnts: Constants.numberOfAnts)
         //solver.runWithSettings()
     }
 
